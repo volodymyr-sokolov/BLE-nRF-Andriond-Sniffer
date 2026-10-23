@@ -1,0 +1,17 @@
+# Host-side tooling for the BLE advertising sniffer and interference bench.
+#
+#     python -m pip install -r requirements.txt
+#
+# Everything else the tools import is in the standard library (argparse, csv,
+# json, math, re, sqlite3, subprocess, pathlib). Two of the three entries below
+# are needed only for figures, so a bench-only install can skip them - see the
+# "Python environment" section of README.md.
+
+# Serial control of the nRF52840 beacon and sniffer. Required by
+# firmware/tools/{beacon,bench,experiment}.py.
+pyserial>=3.5
+
+# Figures and plots only: experiment.py's `plot` subcommand and
+# paper2/figures.py. Not needed to run or score an experiment.
+matplotlib>=3.8
+numpy>=1.26

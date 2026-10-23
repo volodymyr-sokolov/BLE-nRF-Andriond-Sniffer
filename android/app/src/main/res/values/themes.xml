@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colours all come from Compose; the platform theme only needs to supply a
+         window background that does not flash white before the first frame. -->
+    <style name="Theme.BleSniffer" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/window_background</item>
+    </style>
+</resources>

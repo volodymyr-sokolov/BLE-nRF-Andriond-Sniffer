@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Adafruit nRF52840 boards in application mode (0x239A). -->
+    <usb-device vendor-id="9114" product-id="32809" />
+    <usb-device vendor-id="9114" product-id="32785" />
+    <usb-device vendor-id="9114" product-id="32826" />
+
+    <!-- The same boards in bootloader mode (0x0029), which is what a firmware
+         update talks to after the board has been reset into DFU. -->
+    <usb-device vendor-id="9114" product-id="41" />
+
+    <!-- Nordic's own VID (0x1915), for boards flashed with the same firmware. -->
+    <usb-device vendor-id="6421" />
+
+    <!-- Any other device exposing a CDC communications interface. -->
+    <usb-device class="2" subclass="2" protocol="0" />
+    <usb-device class="2" subclass="2" protocol="1" />
+</resources>
